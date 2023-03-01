@@ -1,0 +1,24 @@
+{
+    "Id" : "1234",
+    "Name" : "Post Hotel",
+    "Location": {
+      "Latidude" : "57.7089",
+      "Longitude" : "11.9746"
+    },
+    "Type" : "Hotel",
+    "rooms" : [
+      {
+        "Number" : "101",
+        "Size": "2"
+      },
+      {
+        "Number" : "102",
+        "Size": "2"
+      },
+      {
+        "Number" : "500",
+        "Size": "6"
+      }
+    ]
+  }
+  

@@ -1,0 +1,32 @@
+{
+    "Email" : "emma.mford@gmail.com",
+    "Username" : "emmamid",
+    "fullName" : "Emma Midford",
+    "savedInterests" : [
+        {
+            "Type" : "Hotel",
+            "Id" : "COSMOPOLITANHOT",
+            "Name" : "Cosmopolitan Hotel",
+            "Location" : {
+                "Latidude" : "51.1083",
+                "Longitude" : "17.0434"
+            }
+        }
+    ],
+    "Reservations" : [
+        {
+            "confirmationNumber" : "0236759173",
+            "from" : "2023-07-10",
+            "until" : "2023-07-17",
+            "nameForTheRoom" : "Daisy018",
+            "madeBy" : "emma.mford@gmail.com"
+        },
+        {
+            "confirmationNumber" : "0236756973",
+            "from" : "2022-12-13",
+            "until" : "2022-12-15",
+            "nameForTheRoom" : "Double211",
+            "madeBy" : "emma.mford@gmail.com"
+        }
+    ]
+  }

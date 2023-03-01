@@ -1,0 +1,24 @@
+{
+    "Id" : "HOTWHITESEASONR",
+    "Name" : "Hotel White Season Resort",
+    "Location": {
+      "Latidude" : "57.6268",
+      "Longitude" : "12.0932"
+    },
+    "Type" : "Hotel",
+    "rooms" : [
+      {
+        "Number" : "15",
+        "Size": "2"
+      },
+      {
+        "Number" : "22",
+        "Size": "1"
+      },
+      {
+        "Number" : "04",
+        "Size": ""
+      }
+    ]
+  }
+  
