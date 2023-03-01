@@ -1,20 +1,10 @@
-<?xml version=“1.0” encoding=“UTF-8” ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <hotel id="HOTWHITESEASONR">
-<name="Hotel White Season Resort"/>
-<location>
-    <latitude = "57.6268">
-    <longitude = "12.0932">
-</location>
-<type = "hotel">
-<rooms>
-    <room number="15">
-    <size = "2">
-    </room>
-    <room number="22">
-    <size = "1">
-    </room>
-    <room number="04">
-    <size = "3">
-    </room>
-</rooms>    
+    <name name="Hotel White Season Resort" type ="hotel"/>
+    <location latitude = "57.6268" longitude = "12.0932"/>
+    <rooms>
+        <room number="15" size = "2"/>
+        <room number="22" size = "1"/>
+        <room number="04" size = "3"/>
+    </rooms>    
 </hotel>

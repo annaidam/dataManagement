@@ -1,22 +1,15 @@
-<?xml version=“1.0” encoding=“UTF-8” ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <user email="emma.mford@gmail.com">
-    <username="emmamid"/>
-    <fullname="Emma Midford"/>
+    <name username="emmamid" fullname="Emma Midford"/>
     <savedinterests>
-        <type="Hotel"/>
-        <id="COSMOPOLITANHOT"/>
-        <name="Cosmopolitan Hotel"/>
-        <location>
-            <latitude="51.1083"/>
-            <longitude="17.0434"/>
-        </location>
+        <interest id="COSMOPOLITANHOT">
+            <info type="Hotel" name="Cosmopolitan Hotel"/>
+            <location latitude="51.1083" longitude="17.0434"/>
+        </interest>
     </savedinterests>
     <reservations>
         <reservation confirmationnumber="0236759173">
-            <from="2023-07-10"/>
-            <until="2023-07-17"/>
-            <namefortheroom="Daisy018"/>
-            <madeby="emma.mford@gmail.com"/>
+            <res from="2023-07-10" until="2023-07-17" namefortheroom="Daisy018" madeby="emma.mford@gmail.com"/>
         </reservation>
     </reservations>
 </user>
