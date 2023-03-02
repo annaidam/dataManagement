@@ -17,3 +17,12 @@ to mark each query. Do not just append your queries to the PDF file.*/
 db.conferences.count()
 
 // Question 3.2
+db.conferences.find({},{"name":1, "_id":1})
+
+//Question 3.3
+db.conferences.find({tracks: {$elemMatch: {"topic": 'practice'}}}).pretty()
+
+//Question 3.4 Change the general chair of the MSR’16 conference to Gregg Rothermel.
+
+
+//Question 3.5 Remove the city information from all conferences in India.
