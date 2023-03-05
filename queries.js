@@ -14,15 +14,29 @@ Create a simple text file called queries.js containing all queries. Use comments
 to mark each query. Do not just append your queries to the PDF file.*/
 
 // Question 3.1
-db.conferences.count()
+db.conferences.count();
 
 // Question 3.2
-db.conferences.find({},{"name":1, "_id":1})
+db.conferences.find({}, { name: 1, _id: 1 });
 
 //Question 3.3
-db.conferences.find({tracks: {$elemMatch: {"topic": 'practice'}}}).pretty()
+db.conferences.find({ tracks: { $elemMatch: { topic: "practice" } } }).pretty();
 
 //Question 3.4 Change the general chair of the MSR’16 conference to Gregg Rothermel.
-
+db.conferences.update(
+  { name: "MSR'16" },
+  { $set: { general_chair: "Gregg Rothermel" } }
+);
 
 //Question 3.5 Remove the city information from all conferences in India.
+db.conferences.remove({ location: { $elemMatch: { country: "India" } } });
+
+db.conferences.aggregate([
+  {
+    $cond: [
+      { $elemMatch: ["$location", "India"] },
+      { $elemMatch: ["$city", null] },
+      { $elemMatch: ["$city", "$city"] },
+    ],
+  },
+]);
