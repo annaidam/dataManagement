@@ -29,14 +29,7 @@ db.conferences.update(
 );
 
 //Question 3.5 Remove the city information from all conferences in India.
-db.conferences.remove({ location: { $elemMatch: { country: "India" } } });
-
-db.conferences.aggregate([
-  {
-    $cond: [
-      { $elemMatch: ["$location", "India"] },
-      { $elemMatch: ["$city", null] },
-      { $elemMatch: ["$city", "$city"] },
-    ],
-  },
-]);
+db.conferences.update(
+  { location: { $elemMatch: { country: "India" } } },
+  { $set: { location: { city: null } } }
+);
